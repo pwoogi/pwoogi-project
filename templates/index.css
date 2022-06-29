@@ -1,0 +1,72 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+#bgd {
+    position: absolute;
+    background-image: url("https://i.imgur.com/BZvC7iv.jpg");
+    background-size: 121%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    min-height: 950px;
+}
+
+.container-max {
+    max-width: 1200px;
+}
+#content {
+    color: #f2f2f2;
+    position: relative;
+    margin-left: 18%;
+    margin-top: 9.5%;
+}
+
+#content h1 {
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 120px;
+    margin: 1.25em 0 0.2em;
+    letter-spacing: -2px;
+}
+
+#content p {
+    margin: 0 0 1.313em;
+    font-size: 40px;
+    font-weight: 500;
+    color: floralwhite;
+
+}
+
+.btn {
+    float: right;
+    width : 170px;
+    height: 70px;
+    margin: 0px 0px 10px 0px;
+    background-color: darkviolet;
+    font-size : 38px;
+    color: aliceblue;
+
+    border-radius: 30px;
+    border: 1px solid darkmagenta;
+
+}
+
+.btn:hover {
+    border-color: #f0f8ff;
+    background-color: #b0c4de;
+}
+
+
+
+
+
+
+
+
+
+
+
