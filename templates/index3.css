@@ -1,0 +1,83 @@
+div.question-box {
+    margin: 10px 0 20px 0;
+}
+
+table {
+    border: 3px solid;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("https://i.imgur.com/BZvC7iv.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.urgent {
+    color: red;
+    font-weight: bold;
+}
+
+.container-max {
+    max-width: 1200px;
+}
+
+#content button {
+    width: 70px;
+    height: 70px;
+    font-size: 38px;
+    color: aliceblue;
+    border-radius: 30px;
+    border: 1px solid darkmagenta;
+}
+
+#content {
+    color: #f2f2f2;
+    position: relative;
+    margin-left: 18%;
+    margin-top: 9.5%;
+}
+
+#content h1 {
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100px;
+    margin: 1.25em 0 0.2em;
+    letter-spacing: -2px;
+}
+
+#content p {
+    margin: 0 0 1.313em;
+    font-size: 40px;
+    font-weight: 500;
+    color: floralwhite;
+
+}
+
+.container-max .question-box .btn-q1 {
+    float: inside;
+    width: 170px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+

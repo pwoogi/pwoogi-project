@@ -1,0 +1,48 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    background: url("https://i.imgur.com/BZvC7iv.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.container-max {
+    max-width: 1200px;
+}
+
+#content {
+    color: #f2f2f2;
+    position: relative;
+    margin-left: 18%;
+    margin-top: 9.5%;
+}
+
+#content h1 {
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100px;
+    margin: 1.25em 0 0.2em;
+    letter-spacing: -2px;
+}
+
+#content p {
+    margin: 0 0 1.313em;
+    font-size: 40px;
+    font-weight: 500;
+    color: floralwhite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,20 +3,56 @@
 <head>
     <meta charset="EUC-KR">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>17List - 세상의 모든 리스트</title>
 </head>
+<script>
+    $.ajax({
+        type: "GET",
+        url: "http://spartacodingclub.shop/sparta_api/seoulair",
+        data: {},
+        success: function (response) {
+            console.log(response)
+        }
+    })
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "http://spartacodingclub.shop/sparta_api/weather/seoul",
+            data: {},
+            success: function (response) {
+                let temp = response['temp']
+                $('#tmp').text(temp)
+            }
+        })
+    })
 
+</script>
 
 <body>
 <div id="bgd"></div>
 <div id="content" class="container-max">
-    <button type="button" class="temp"><strong>날씨</strong></button>
+    <div>
+        <button id="open_temp" type="button" class="temp"><strong><span id="tmp">00.0</span></strong></button>
+        <button id="open_mise" type="button" class="mise"><strong>서울의 기온</strong></button>
+    </div>
     <h1>17List</h1>
     <p>검색하고 싶은 리스트를 클릭해주세요</p>
     <div class="btn">
-        <button type="button" class="btn btn-primary"><strong>Music</strong></button>
-        <button type="button" class="btn btn-primary"><strong>News</strong></button>
+        <div class="btn1">
+            <button onclick="location.href='index1.html'" type="button" class="btn btn-primary"><strong>Music</strong>
+            </button>
+        </div>
+        <div class="btn2">
+            <button onclick="location.href='index2.html'" type="button" class="btn btn-light"><strong>News</strong>
+            </button>
+        </div>
+        <div class="btn3">
+            <button onclick="location.href='index3.html'" type="button" class="btn btn-primary"><strong>Bike</strong>
+            </button>
+        </div>
     </div>
+
 </div>
 </body>
 </html>

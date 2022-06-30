@@ -1,21 +1,43 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
-#bgd {
-    position: absolute;
-    background-image: url("https://i.imgur.com/BZvC7iv.jpg");
-    background-size: 121%;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: auto;
-    min-height: 950px;
+body {
+    height: 100vh;
+    background: url("https://i.imgur.com/BZvC7iv.jpg") no-repeat center;
+    background-size: cover;
 }
+
 
 .container-max {
     max-width: 1200px;
+}
+/* 버튼을 HTML에서 <div> 위치선정이 잘못되어있는건지..*/
+.temp{
+    float: right;
+    width : 100px;
+    height: 80px;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid honeydew;
+}
+.mise{
+    float: right;
+    width : 100px;
+    height: 80px;
+    color: white;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid honeydew;
+}
+.temp:hover{
+    border-color: #f2f2f2;
+    background-color: darkslateblue;
+}
+.mise:hover{
+    border-color: #f2f2f2;
+    background-color: darkblue;
 }
 #content {
     color: #f2f2f2;
@@ -42,14 +64,13 @@
 }
 
 .btn {
-    float: right;
+    float: inside;
     width : 170px;
     height: 70px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 30px 0px;
     background-color: darkviolet;
     font-size : 38px;
     color: aliceblue;
-
     border-radius: 30px;
     border: 1px solid darkmagenta;
 
@@ -59,6 +80,8 @@
     border-color: #f0f8ff;
     background-color: #b0c4de;
 }
+
+
 
 
 

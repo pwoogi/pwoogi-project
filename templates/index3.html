@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="EUC-KR">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>17List - 세상의 모든 리스트</title>
+</head>
+<script>
+    function q1() {
+        $('#names-q1').empty();
+        $.ajax({
+            type: "GET",
+            url: "http://spartacodingclub.shop/sparta_api/seoulbike",
+            data: {},
+            success: function (response) {
+                let rows = response["getStationList"]["row"];
+                for (let i = 0; i < rows.length; i++) {
+                    let rack_name = rows[i]['stationName'];
+                    let rack_cnt = rows[i]['rackTotCnt'];
+                    let bike_cnt = rows[i]['parkingBikeTotCnt'];
+                    let temp_html = '';
+                    if (bike_cnt < 5) {
+                        temp_html = `<tr class="urgent">
+                                        <td>${rack_name}</td>
+                                        <td>${rack_cnt}</td>
+                                        <td>${bike_cnt}</td>
+                                    </tr>`
+                    } else {
+                        temp_html = `<tr>
+                                        <td>${rack_name}</td>
+                                        <td>${rack_cnt}</td>
+                                        <td>${bike_cnt}</td>
+                                    </tr>`
+                    }
+                    $('#names-q1').append(temp_html);
+                }
+            }
+        })
+    }
+</script>
+
+<body>
+
+<div id="bgd"></div>
+<div id="content" class="container-max">
+    <div class="question-box">
+        <h1>서울시 자전거 정보</h1>
+        <p>업데이트를 눌러주세요!</p>
+        <button class="btn-q1" onclick="q1()">업데이트</button>
+        <table class="table">
+            <thead>
+            <tr>
+                <td>거치대 위치</td>
+                <td>거치대 수</td>
+                <td>현재 거치된 자전거 수</td>
+            </tr>
+            </thead>
+            <tbody id="names-q1">
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

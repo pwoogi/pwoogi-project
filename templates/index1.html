@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="EUC-KR">
+    <link rel="stylesheet" type="text/css" href="index1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>17List - 세상의 모든 리스트</title>
+</head>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "http://spartacodingclub.shop/sparta_api/seoulair",
+            data: {},
+            success: function (response) {
+                console.log(response)
+            }
+        })
+    </script>
+
+<body>
+    <div id="bgd"></div>
+    <div id="content" class="container-max">
+
+        <h1>오늘의 음악 TOP 10</h1>
+        <p>장르를 선택해주세요</p>
+
+
+    </div>
+</body>
+</html>
